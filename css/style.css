@@ -51,10 +51,12 @@ img {
   align-items: center;
 }
 .stars-rating .i-star {
-  margin-right: 5px;
+  margin-right: 3.5px;
   width: 16px;
-  height: 16px;
+  height: 14.5px;
+
 }
+
 .stars-rating .i-star.not-active {
   filter: brightness(0) invert(0.8);
 }
@@ -63,6 +65,9 @@ img {
   position: relative;
   font-size: 10px;
   line-height: 10px;
+  height: 20px;
+  padding-top: 10px;
+  
 }
 .likes-rating i {
   display: block;
@@ -72,9 +77,13 @@ img {
   margin-top: -5px;
 }
 .likes-rating .i-like {
-  width: 16px;
-  height: 16px;
+  width: 10px;
+  height: 10px;
+  
+  
+
 }
+
 .i-type-city {
   background: url(../images/icon/type-city.svg) no-repeat;
 
@@ -108,13 +117,15 @@ img {
 }
 .i-excursions {
   background: url(../images/icon/excursions.svg) no-repeat;
-  background-position:center;
+  background-position:6px center;
 background-size: 54px 34px;
+
 }
 .i-attractions {
   background: url(../images/icon/attraction.svg) no-repeat;
   background-position:center;
-  background-size: 23px 51px  ;
+  background-size: 23px 51px;
+
   
 }
 .i-eat {
@@ -152,6 +163,7 @@ background-size: 36px 23px;
 }
 .i-star {
   background: url(../images/icon/star.svg) no-repeat;
+  background-size: 10px 10px;
 }
 .i-search {
   background: url(../images/icon/search.svg) no-repeat;
@@ -545,8 +557,11 @@ Content Products
   position: absolute;
   bottom: 10px;
   left: 27px;
+ 
 }
 .item-content .likes-rating i {
+  margin-top:0px;
+  
   transition: filter 0.1s ease-in-out;
   filter: brightness(0) invert(0.8);
 }
@@ -873,8 +888,11 @@ Main Info Product
 }
 .block-rating .stars-rating .i-star {
   margin-right: 15px;
-  width: 30px;
+  width: 28px;
   height: 30px;
+  
+  background-size: 20px;
+  background-position: center;
 }
 .block-rating .likes-rating {
   margin-top: -9px;
@@ -884,6 +902,9 @@ Main Info Product
   margin-top: -10px;
   width: 30px;
   height: 30px;
+  
+  background-size: 20px 16px;
+  background-position: center; 
 }
 .address-product {
   position: relative;
@@ -917,8 +938,10 @@ Main Info Product
 }
 .product-btn .likes-rating {
   font-size: 12px;
-  padding-left: 20px;
+  padding-left: 15px;
+  padding-bottom: 25px;
   cursor: pointer;
+ 
 }
 .product-btn .likes-rating .i-like {
   margin-top: -10px;
@@ -926,6 +949,9 @@ Main Info Product
   height: 30px;
   filter: brightness(0) invert(0.8);
   transition: filter 0.1s ease-in-out;
+  
+  background-size: 20px 16px;
+
 }
 .product-btn .likes-rating:hover i {
   filter: none;
@@ -1046,3 +1072,4 @@ Main Info Product
 .modal-backdrop.show {
   opacity: .8;
 }
+
