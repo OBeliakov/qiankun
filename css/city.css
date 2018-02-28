@@ -202,7 +202,8 @@ Header Top
 margin-top: -80px;
   height: 740px;
 
-  background: url(../images/mapandgradient.png) no-repeat center 0px;
+  background: url(../images/mapgrad.png) no-repeat center 0px;
+  
   /*url(../images/map2.png) 20% 130px no-repeat;*/
  
 }
@@ -1134,3 +1135,4 @@ padding-left:9px;
 text-align: center!important;
 
 }
+
