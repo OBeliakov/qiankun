@@ -198,8 +198,10 @@ Header Top
 }
 .header-bg {
 
-  background: url(../images/header-background.png) no-repeat -200px -80px,
-  url(../images/map2.png) 100px 130px no-repeat;
+  z-index: 1;
+
+  background: url(../images/header-background.png) no-repeat center -40px;
+  /*url(../images/map2.png) 20% 130px no-repeat;*/
  
 }
 
@@ -304,12 +306,15 @@ Header Bottom
   padding: 60px 0 90px 0;
 }
 .nav-city {
+margin-top: -35px;
   position: relative;
-  
+ background: url(../images/bgmaps.png) -20px 0px no-repeat;
  
+ height: 630px!important;
  
+ z-index: 0;
   width: 100%;
-  height: 379px;
+ 
 }
 .nav-city-menu {
   height: 100%;
@@ -465,12 +470,15 @@ Content Products
   line-height: 40px;
   font-weight: 600;
   text-align: center;
+   margin-top:-140px;
+  z-index: 1;
 }
 .block-products {
   display: flex;
   justify-content: space-between;
   margin-top: 65px;
   margin-bottom: 50px;
+
 }
 .item-product {
   position: relative;
@@ -1103,7 +1111,7 @@ Main Info Product
 	
 }
 .city-kazan{
-	margin:165px 185px;
+	margin:245px 155px;
 	border-radius: 50%;
 border-width: 8px;
 border-color:  #ffffff;
