@@ -197,20 +197,19 @@ Header Top
   padding-top: 80px;
 }
 .header-bg {
+  
+  margin-top: 0px;
+margin-top: -80px;
+  height: 740px;
 
-  z-index: 1;
-
-  background: url(../images/header-background.png) no-repeat center -40px;
+  background: url(../images/mapandgradient.png) no-repeat center 0px;
   /*url(../images/map2.png) 20% 130px no-repeat;*/
  
 }
 
 .header-top {
-  position: fixed;
-  width: 100%;
-  top: 0;
-  margin: 0 auto;
-  background: #fff;
+  
+  
   padding: 20px 0;
   z-index: 999;
 }
@@ -306,14 +305,13 @@ Header Bottom
   padding: 60px 0 90px 0;
 }
 .nav-city {
-margin-top: -35px;
+margin-top: -75px;
   position: relative;
- background: url(../images/bgmaps.png) -20px 0px no-repeat;
- 
- height: 630px!important;
- 
+ /*background: url(../images/bgmaps.png) -20px 0px no-repeat;*/
+ height: 490px!important;
  z-index: 0;
-  width: 100%;
+ width: 100%;
+ 
  
 }
 .nav-city-menu {
@@ -466,11 +464,12 @@ margin-top: -35px;
 Content Products
 ====================================================*/
 .title-products {
+  margin-top: -120px;
   font-size: 36px;
   line-height: 40px;
   font-weight: 600;
   text-align: center;
-   margin-top:-140px;
+   
   z-index: 1;
 }
 .block-products {
@@ -1111,7 +1110,7 @@ Main Info Product
 	
 }
 .city-kazan{
-	margin:245px 155px;
+	margin:200px 145px;
 	border-radius: 50%;
 border-width: 8px;
 border-color:  #ffffff;
