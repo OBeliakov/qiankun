@@ -110,7 +110,11 @@ img {
   background: url(../images/icon/msk.png) no-repeat;
 }
 .i-kazan {
-  background: url(../images/icon/kazan.png) no-repeat;
+	width: 50px!important;
+	height: 55px;
+	background: url(../images/icon/kazan.png) no-repeat;
+  	background-position: 1.5px 0px;
+
 }
 .i-sochi {
   background: url(../images/icon/sochi.png) no-repeat;
@@ -193,8 +197,14 @@ Header Top
   padding-top: 80px;
 }
 .header-bg {
-  background: url(../images/header-background.png) no-repeat top;
+
+  z-index: 1;
+
+  background: url(../images/header-background.png) no-repeat center -40px;
+  /*url(../images/map2.png) 20% 130px no-repeat;*/
+ 
 }
+
 .header-top {
   position: fixed;
   width: 100%;
@@ -296,10 +306,15 @@ Header Bottom
   padding: 60px 0 90px 0;
 }
 .nav-city {
+margin-top: -35px;
   position: relative;
-  background: url(../images/map.png) no-repeat;
+ background: url(../images/bgmaps.png) -20px 0px no-repeat;
+ 
+ height: 630px!important;
+ 
+ z-index: 0;
   width: 100%;
-  height: 379px;
+ 
 }
 .nav-city-menu {
   height: 100%;
@@ -315,8 +330,8 @@ Header Bottom
   font-weight: 600;
   color: #fff;
   padding-bottom: 6px;
-  border-bottom: solid 7px rgba(0, 255, 0, 0.3);
-  text-shadow: -3px 3px 1px #ff010b;
+ 
+  
 }
 .nav-city-menu a:hover {
   border-color: #00ff00;
@@ -366,15 +381,21 @@ Header Bottom
 }
 .services-menu {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
-}
+ margin-left: 20px;
+ padding-left:40px;
+ padding-right: 40px; 
+ width:500px;
+ }
 .services-menu li {
+
   display: inline-block;
-  margin: 0 143px 60px 0;
+  margin: -10px 143px 60px 0;
 }
 .services-menu li:nth-child(3n+3) {
-  margin: 0;
+  margin:0px;
+  margin-top: -10px;
 }
 .services-menu a {
   display: block;
@@ -449,12 +470,15 @@ Content Products
   line-height: 40px;
   font-weight: 600;
   text-align: center;
+   margin-top:-140px;
+  z-index: 1;
 }
 .block-products {
   display: flex;
   justify-content: space-between;
   margin-top: 65px;
   margin-bottom: 50px;
+
 }
 .item-product {
   position: relative;
@@ -746,6 +770,7 @@ Breadcrumbs Content
 .breadcrumbs {
   display: flex;
   padding: 30px 0;
+  padding-left: 10px;
 }
 .breadcrumbs li {
   margin-right: 20px;
@@ -765,6 +790,16 @@ Breadcrumbs Content
   width: 6px;
   height: 6px;
 }
+.breadcrumbs li:nth-child(2) a {
+ 
+ color:#312f42;
+}
+
+.breadcrumbs li a {
+  
+}
+
+
 .breadcrumbs .active {
   color: #ff010b;
 }
@@ -1072,4 +1107,33 @@ Main Info Product
 .modal-backdrop.show {
   opacity: .8;
 }
+.nav-city-menu{
+	
+}
+.city-kazan{
+	margin:245px 155px;
+	border-radius: 50%;
+border-width: 8px;
+border-color:  #ffffff;
+border-style: solid;
+background-color:  #f9d725;
+
+width: 68px;
+height: 68px;
+
+}
+
+.city-kazan a{
+font-family: 'Microsoft YaHei';
+color:  #e30613;
+font-size: 20px;
+box-shadow: none!important;
+margin-top: 8px;
+padding-left:9px;
+
+
+text-align: center!important;
+
+}
+
 
